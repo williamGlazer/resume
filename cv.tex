@@ -1,0 +1,216 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.2in]{geometry} % Document margins
+\usepackage{tasks}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\usepackage{fontawesome}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+\name{William Glazer-Cavanagh} % Your name
+\address{438-389-8650 \\ willcavanagh@hotmail.com \\ French / English
+\newline 
+\href{https://williamglazer.github.io/website/}{Website \faGlobe}
+\quad 
+\href{https://www.linkedin.com/in/williamglazercavanagh/}{LinkedIn \faLinkedinSquare}
+\quad 
+\href{https://github.com/williamGlazer}{GitHub \faGithub}
+\quad
+\href{https://scholar.google.ca/citations?hl=en&user=PbykyI4AAAAJ}{Scholar \faGraduationCap}
+} % Your phone number and email
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcommand{\cvitem}[1]{\bullet~#1\par}
+
+% reduce space after prog skills
+\setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+  %
+  \begin{rSubsection}{University of Montréal - Professional Masters in Machine Learning \href{https://mila.quebec/en/cours/professional-masters-in-machine-learning/}{\faExternalLink}}{September 2022 - December 2023}{Accepted in the MILA program - 3.9 / 4.3 GPA}{Montreal, Quebec}
+  \end{rSubsection}
+
+  \begin{rSubsection}{Polytechnique Montréal - Bachelor in Software Engineering \href{https://www.polymtl.ca/programmes/programmes/bc-logiciel}{\faExternalLink}}{September 2017 - May 2022}{Artificial Intelligence \& Data Science - 3.4 / 4.0 GPA}{Montreal, Quebec}
+
+  \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+  \begin{rSubsection}{AbCellera Biologics - \textit{Machine Learning Scientist Intern} \href{https://abcellera.com/}{\faExternalLink}}{May 2023 - November 2023}{}{}
+
+    Automation of high-throughput screening (HTS) for drug discovery with online
+    learning and computer vision
+    \href{https://www.youtube.com/watch?v=9v38lwvlsgc&ab_channel=NorthTechnologyPeople}{\faExternalLink}
+
+    \begin{itemize}
+      \item Outperformed pre-existing models in 80\% of the images in out of distribution
+            (OOD) settings as measured by A/B testing.
+
+      \item Enabled processing of several classes of new assays by building a
+            semi-supervised pipeline for automatic labelling with \textbf{Python},
+            \textbf{TorchLightning} and \textbf{PyTorch}.
+
+      \item Orchestrated workflows with \textbf{Flyte} and implemented distributed data
+            ingestion processes with \textbf{Dask}
+
+      \item Understood and acted on cell screener's issues with existing workflows for a
+            smooth change management
+
+    \end{itemize}
+
+  \end{rSubsection}
+
+  \begin{rSubsection}{Intact Insurance - \textit{Data Scientist Intern} \href{https://intactlab.ca/}{\faExternalLink}}{May 2022 - August 2022}{}{}
+
+    Optimization and evaluation of call center processes across Canada
+
+    \begin{itemize}
+      \item Increased yearly call center sales by an estimated 200K\$ by implementing
+            employee management strategies in production. These strategies were designed
+            and reviewed using our custom discrete event simulator implemented with
+            \textbf{Python}, \textbf{SimPy}
+
+      \item Detected production issues by developing dashboards, ETL pipelines and A/B
+            tests to monitor models with \textbf{SQL}, \textbf{PowerBI}
+
+      \item Found and fixed anomalies in our tree-based model by analyzing features and
+            their impact on predictions with \textbf{LightGBM}
+
+    \end{itemize}
+  \end{rSubsection}
+
+  \begin{rSubsection}{Croesus Finansoft - \textit{Research Intern} \href{https://www.croesus.com/about-us/croesus-lab/}{\faExternalLink}}{May 2021 - August 2021}{}{}
+
+    Automatically explain stock price fluctuations from news articles with Natural
+    Language Processing (NLP)
+
+    \begin{itemize}
+
+      \item Improved generated text's ROUGE score by 5\% by integrating two recently
+            published algorithms to our pipeline using \textbf{Python}, \textbf{Docker} and
+            \textbf{Large Language Models}
+
+      \item Identified avenues of research by assessing the state of the art in knowledge
+            injection with knowledge graphs for NLP algorithms. Discussed interesting
+            findings with principal researcher to establish a research agenda.
+
+      \item Increased reproducibility and reduced delays by 15\% by refactoring and
+            re-designing the algorithm evaluation pipeline with \textbf{Argo Workflows} and
+            \textbf{Microservice Design Patterns}
+
+    \end{itemize}
+  \end{rSubsection}
+
+  \begin{rSubsection}{Merck Canada - \textit{Data Engineer Intern }\href{https://jobs.merck.com/us/en/data-advanced-analytics}{\faExternalLink}}{January 2021 - May 2021}{}{}
+
+    Development of Merck Canada's internal ETL (extract, transform, load) processes
+    for Business Intelligence
+
+    \begin{itemize}
+
+      \item Produced first insights on GARDASIL-9 HPV vaccine’s by leading a market
+            opportunity analysis. This project is currently being used to power a
+            canada-wide marketing and awareness campaign against HPV.
+
+      \item Automated Merck Canada's manual ETL workloads and reduced delays by two days
+            with \textbf{AWS Cloud} and \textbf{Python}
+
+    \end{itemize}
+  \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS \& PUBLICATIONS}
+
+  \begin{rSubsection}{\normalfont{\textit{IVADO - Deep Learning Essentials}} \href{https://www.edx.org/course/deep-learning-essentials}{\faExternalLink} \quad \normalfont{Proofread IVADO/MILA online Deep Learning class covering: CNNs, GANs, RNNs}}{}{}{}
+  \end{rSubsection}
+
+  \begin{rSubsection}{\normalfont{\textit{Polytechnique Montreal - MCIS Lab}} \href{https://mcis.cs.queensu.ca/index.html}{\faExternalLink} \quad \normalfont{Paper accepted at EMSE: \textit{Towards a Change Taxonomy for ML Systems} \href{https://arxiv.org/abs/2203.11365}{\faExternalLink}}}{}{}{}
+  \end{rSubsection}
+
+  \begin{rSubsection}{\normalfont{\textit{Polytechnique AI Student Club - Founder}} \href{https://www.facebook.com/branchPolyAi}{\faExternalLink} \quad \normalfont{Kickstarted the club and handled content for the first cohort of 10}}{}{}{}
+  \end{rSubsection}
+
+  \begin{rSubsection}{\normalfont{\textit{ProjectX - Team Lead} }\href{https://www.uoft.ai/projectx}{\faExternalLink} \quad \normalfont{Research competition to analyze links between respiratory diseases and air quality}}{}{}{}
+  \end{rSubsection}
+
+  \begin{rSubsection}{\normalfont{\textit{Polytechnique Montreal Admission Scholarship}} \href{https://www.polymtl.ca/aide-financiere/bourses/bourses-dexcellence-ladmission-de-la-fondation-de-polytechnique-et-de-la-directrice-generale}{\faExternalLink} \quad \normalfont{Awarded for outstanding academic performance}}{}{}{}
+  \end{rSubsection}
+
+  %----------------------------------------------------------------------------------------
+  %	LNG SECTION
+  %----------------------------------------------------------------------------------------
+
+  \begin{rSection}{Programming Skills}
+    \begin{multicols}{2}
+      \begin{itemize}[label={}, leftmargin=*, noitemsep]
+
+        \item{
+              \textbf{Languages}:
+              Python, Bash, C/C++, Java,
+              }
+
+        \item{
+              \textbf{Others}:
+              Flask, Linux, Docker, GIT, AWS, LaTeX
+              }
+
+        \item{
+              \textbf{Books}:
+              Clean Code, SWE at Google \textit{(ongoing)}
+              }
+
+        \item{
+              \textbf{ETL}:
+              Pandas, Dask, SQL/NoSQL
+              }
+
+        \item{
+              \textbf{Machine Learning}:
+              PyTorch, Lightning, SK-Learn, NumPy
+              }
+
+        \item{
+              \textbf{Visualization}:
+              MatPlotLib, Seaborne, PowerBI
+              }
+      \end{itemize}
+    \end{multicols}
+  \end{rSection}
+
+  %	TECHNICAL STRENGTHS SECTION
+  %----------------------------------------------------------------------------------------
+
+\end{rSection}
+\end{document}
