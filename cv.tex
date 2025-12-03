@@ -56,8 +56,8 @@
 \end{center}
 
 % 1. PROFESSIONAL SUMMARY
-\section*{Applied ML Engineer | Bridging Research \& Production}
-Machine Learning Engineer specializing in deploying Transformer-based foundation models into enterprise environments. I focus on the engineering reality of AI: optimizing large-scale inference, validating product viability with internal customers, and building robust human-in-the-loop workflows for high-stakes data.
+\section*{Applied ML Engineer | Bridging Research \& Product}
+Machine Learning Engineer specializing in building AI products and deploying Foundation Models. I bridge the gap between research and tooling: optimizing large-scale inference, curating post-training datasets, and building decision-support interfaces that enable domain experts to interact with complex models.
 
 % 2. CONTACT INFORMATION
 \section{Contact Information}
@@ -78,23 +78,23 @@ Machine Learning Engineer specializing in deploying Transformer-based foundation
 \section{Skills}
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
-  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers (BERT/ESM Foundation Models) $|$ Fine-tuning $|$ NLP $|$ Computer Vision}
-  \resumeItem{\textbf{Infrastructure}: Docker $|$ AWS $|$ Modal (Serverless) $|$ Dask $|$ Flask $|$ Distributed Systems}
-  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ NumPy $|$ ML System Design $|$ Retrieval-Augmented Architectures}
+  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers (Foundation Models) $|$ Fine-tuning $|$ RAG $|$ Human-in-the-loop Workflows}
+  \resumeItem{\textbf{Infrastructure}: Docker $|$ AWS $|$ Modal (Serverless) $|$ Dask $|$ Flask $|$ Distributed Inference}
+  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ NumPy $|$ Data Curation Strategy}
 \end{itemize}
 
 % 4. EXPERIENCE
 \section{Work Experience}
 \resumeSubHeadingList
   \resumeSubheading
-      {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
+      {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Present}
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Delivered a sequence modeling product (Ideation to Production):} Led the full lifecycle: scoping requirements with internal customers, designing data normalization pipelines, and calibrating Transformer likelihoods. Shipped a tool that enables users to filter high-risk sequences (30\% failure rate).}
-          \resumeItem{\textbullet\ \textbf{Engineered high-fidelity training datasets:} Collaborated with experts to design domain-specific normalization logic. Enforced strict evaluation rigor using \textbf{temporal splits} and \textbf{sequence identity clustering}, ensuring zero test-set leakage and realistic performance estimates.}
-          \resumeItem{\textbullet\ \textbf{Consulted on technical strategy for domain experts:} Validated product feasibility by demonstrating that proposed Deep Learning solutions would fail due to stochastic noise (Low SNR). Saved months of development time by redirecting resources to viable statistical methods.}
+          \resumeItem{\textbullet\ \textbf{Delivered an AI workspace product (Ideation to Production):} Led the full lifecycle of a decision-support tool for scientists. Designed the backend logic and user-facing metrics, enabling non-technical experts to filter high-risk sequences (30\% failure rate) using Transformer likelihoods.}
+          \resumeItem{\textbullet\ \textbf{Engineered high-fidelity post-training datasets:} Curated large-scale proprietary datasets by implementing \textbf{sequence identity clustering} and domain-specific normalization. Enforced strict \textbf{temporal splits} to prevent test-set leakage, ensuring model performance translated to production use.}
+          \resumeItem{\textbullet\ \textbf{Built Human-in-the-Loop (HITL) annotation tools:} Mitigated hallucinations by building a rapid labeling interface for domain experts. Captured expert feedback on the top 20 OOD cases per batch, creating a flywheel to fine-tune the model on hard-negatives (improving precision from 0.4 to 0.8 mAP).}
+          \resumeItem{\textbullet\ \textbf{Consulted on product feasibility:} Partnered with internal customers to validate AI use-cases. Disproved the viability of a proposed Deep Learning solution due to low SNR, redirecting resources to high-impact statistical tooling instead.}
           \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
           \resumeItem{\textbullet\ \textbf{Orchestrated cross-functional deployment:} Reduced processing latency by 50\% by deploying a custom MobileNet model across \textbf{Robotics, Backend, and Science} workflows, hitting hardware speed limits to process ~100,000 images/day.}
-          \resumeItem{\textbullet\ \textbf{Mitigated hallucinations via Fine-tuning:} Doubled precision (0.4 to 0.8 mAP) by fine-tuning a custom model on hard-negative examples. Built a human-in-the-loop labeling interface to capture expert feedback on the top 20 OOD cases per class.}
       \resumeSubHeadingListEnd
 
   \resumeSubheading
@@ -118,9 +118,9 @@ Machine Learning Engineer specializing in deploying Transformer-based foundation
     \resumeSubheading
     {BEng. Software Engineering}{Artificial Intelligence Profile}{Graduation Year 2022}{Polytechnique Montreal}{}
     \resumeSubHeadingList
-        \resumeItem{\textbullet\ \textbf{Co-authored ML systems research:} Published analysis on \textit{Change Taxonomy for ML Systems} (accepted at EMSE).}
+        \resumeItem{\textbullet\ \textbf{Peer-Reviewed Publication (EMSE):} Co-authored \textit{"Towards a Change Taxonomy for ML Systems"}, analyzing software engineering challenges in productionizing ML.}
         \resumeItem{\textbullet\ \textbf{Benchmarked RL frameworks:} Conducted comparative performance analysis of \textbf{JAX} vs. PyTorch for Deep Reinforcement Learning. [\href{https://github.com/williamGlazer/jax-4-deeprl/blob/main/report.pdf}{GitHub/jax-4-deeprl}]}
-        \resumeItem{\textbullet\ \textbf{Scientific Contributor (IVADO/MILA):} Served as technical reference and annotator for the \textit{Deep Learning Essentials} course, validating scientific accuracy of CNN, GAN, and RNN content for content teams.}
+        \resumeItem{\textbullet\ \textbf{Scientific Contributor (IVADO/MILA):} Served as technical reference and annotator for the \textit{Deep Learning Essentials} course, validating scientific accuracy of CNN, GAN, and RNN content for production teams.}
     \resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
 
