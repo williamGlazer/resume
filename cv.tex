@@ -1,192 +1,127 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
 
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.2in]{geometry} % Document margins
-\usepackage{tasks}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  \item \textbf{#1, #2 $|$ #3 $|$ #4}
 }
-\usepackage{fontawesome}
-
-\usepackage[scaled]{helvet}
-\renewcommand\familydefault{\sfdefault} 
-\usepackage[T1]{fontenc}
-
-\name{William Glazer-Cavanagh} % Your name
-\address{438-389-8650 \\ willcavanagh@hotmail.com \\ French / English
-\newline 
-\href{https://williamglazer.github.io/website/}{Website \faGlobe}
-\quad 
-\href{https://www.linkedin.com/in/williamglazercavanagh/}{LinkedIn \faLinkedinSquare}
-\quad 
-\href{https://github.com/williamGlazer}{GitHub \faGithub}
-\quad
-\href{https://scholar.google.ca/citations?hl=en&user=PbykyI4AAAAJ}{Scholar \faGraduationCap}
-} % Your phone number and email
-
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-\newcommand{\cvitem}[1]{\bullet~#1\par}
-
-% reduce space after prog skills
-\setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
-
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\begin{center}
+  \textbf{\Huge William Glazer-Cavanagh} \\
+\end{center}
 
-\begin{rSection}{Education}
-  %
-  \begin{rSubsection}{University of Montréal - Professional Masters in Machine Learning \href{https://mila.quebec/en/cours/professional-masters-in-machine-learning/}{\faExternalLink}}{September 2022 - December 2023}{Accepted in the MILA program - 3.9 / 4.3 GPA}{Montreal, Quebec}
-  \end{rSubsection}
+% 1. PROFESSIONAL SUMMARY
+\section*{Applied ML Engineer | Bridging Research \& Production}
+Machine Learning Engineer specializing in deploying Transformer-based foundation models into enterprise environments. I focus on the engineering reality of AI: optimizing large-scale inference, validating product viability with internal customers, and building robust human-in-the-loop workflows for high-stakes data.
 
-  \begin{rSubsection}{Polytechnique Montréal - Bachelor in Software Engineering \href{https://www.polymtl.ca/programmes/programmes/bc-logiciel}{\faExternalLink}}{September 2017 - May 2022}{Artificial Intelligence \& Data Science - 3.4 / 4.0 GPA}{Montreal, Quebec}
+% 2. CONTACT INFORMATION
+\section{Contact Information}
+\vspace{-6pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
+  \resumeItem{
+    \textbf{Phone}: 438-389-8650 
+    $|$ \textbf{Email}: \href{mailto:willcavanagh@hotmail.com}{willcavanagh@hotmail.com} 
+    $|$ \textbf{Location}: Montreal, QC / Vancouver, BC
+    \\
+    \textbf{LinkedIn}: \href{https://www.linkedin.com/in/williamglazercavanagh/}{linkedin.com/in/williamglazercavanagh}
+    $|$ \textbf{GitHub}: \href{https://github.com/williamGlazer}{github.com/williamGlazer} 
+    $|$ \textbf{Website}: \href{https://williamglazer.github.io}{williamglazer.github.io}
+  }
+\end{itemize}
 
-  \end{rSubsection}
+% 3. SKILLS
+\section{Skills}
+\vspace{-6pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
+  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers (BERT/ESM Foundation Models) $|$ Fine-tuning $|$ NLP $|$ Computer Vision}
+  \resumeItem{\textbf{Infrastructure}: Docker $|$ AWS $|$ Modal (Serverless) $|$ Dask $|$ Flask $|$ Distributed Systems}
+  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ NumPy $|$ ML System Design $|$ Retrieval-Augmented Architectures}
+\end{itemize}
 
-\end{rSection}
+% 4. EXPERIENCE
+\section{Work Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ \textbf{Delivered a sequence modeling product (Ideation to Production):} Led the full lifecycle: scoping requirements with internal customers, designing data normalization pipelines, and calibrating Transformer likelihoods. Shipped a tool that enables users to filter high-risk sequences (30\% failure rate).}
+          \resumeItem{\textbullet\ \textbf{Engineered high-fidelity training datasets:} Collaborated with experts to design domain-specific normalization logic. Enforced strict evaluation rigor using \textbf{temporal splits} and \textbf{sequence identity clustering}, ensuring zero test-set leakage and realistic performance estimates.}
+          \resumeItem{\textbullet\ \textbf{Consulted on technical strategy for domain experts:} Validated product feasibility by demonstrating that proposed Deep Learning solutions would fail due to stochastic noise (Low SNR). Saved months of development time by redirecting resources to viable statistical methods.}
+          \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
+          \resumeItem{\textbullet\ \textbf{Orchestrated cross-functional deployment:} Reduced processing latency by 50\% by deploying a custom MobileNet model across \textbf{Robotics, Backend, and Science} workflows, hitting hardware speed limits to process ~100,000 images/day.}
+          \resumeItem{\textbullet\ \textbf{Mitigated hallucinations via Fine-tuning:} Doubled precision (0.4 to 0.8 mAP) by fine-tuning a custom model on hard-negative examples. Built a human-in-the-loop labeling interface to capture expert feedback on the top 20 OOD cases per class.}
+      \resumeSubHeadingListEnd
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+  \resumeSubheading
+      {Croesus}{Montreal}{Research Intern}{05/2021 - 08/2021}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ \textbf{Evaluated Retrieval-Augmented Generation (RAG) feasibility:} Assessed early methods for injecting Knowledge Graphs into BERT-based architectures to define the company's roadmap for grounding NLP models in factual data.}
+      \resumeSubHeadingListEnd
 
-%------------------------------------------------
+  \resumeSubheading
+      {Merck}{Montreal}{Data Engineer Intern}{05/2021 - 08/2021}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ \textbf{Cut reporting latency by 2 days:} Automated manual ETL pipelines using AWS and Python, delivering critical operational data 48 hours faster.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
-\begin{rSection}{Work Experience}
+% 5. EDUCATION
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+  {MSc. Machine Learning}{Professional Masters}{Graduation Year 2023}{University of Montreal (MILA)}{}
+    \resumeSubheading
+    {BEng. Software Engineering}{Artificial Intelligence Profile}{Graduation Year 2022}{Polytechnique Montreal}{}
+    \resumeSubHeadingList
+        \resumeItem{\textbullet\ \textbf{Co-authored ML systems research:} Published analysis on \textit{Change Taxonomy for ML Systems} (accepted at EMSE).}
+        \resumeItem{\textbullet\ \textbf{Benchmarked RL frameworks:} Conducted comparative performance analysis of \textbf{JAX} vs. PyTorch for Deep Reinforcement Learning. [\href{https://github.com/williamGlazer/jax-4-deeprl/blob/main/report.pdf}{GitHub/jax-4-deeprl}]}
+        \resumeItem{\textbullet\ \textbf{Scientific Contributor (IVADO/MILA):} Served as technical reference and annotator for the \textit{Deep Learning Essentials} course, validating scientific accuracy of CNN, GAN, and RNN content for content teams.}
+    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
-  \begin{rSubsection}{AbCellera Biologics - \textit{Machine Learning Scientist II} \href{https://abcellera.com/}{\faExternalLink}}{May 2023 - Present}{}{}
-
-    Automation of high-throughput screening (HTS) for drug discovery via
-    semi-supervised learning and computer vision
-    \href{https://www.youtube.com/watch?v=9v38lwvlsgc&ab_channel=NorthTechnologyPeople}{\faExternalLink}
-
-    \begin{itemize}
-
-      \item Developed a semi-supervised pipeline for automatic labeling of new assay
-            classes using \textbf{Python} and \textbf{PyTorch}. This pipeline outperformed
-            pre-existing models in 80\% of the images in out of distribution (OOD) settings
-            as measured by \textbf{A/B testing}.
-
-      \item Engineered paralellized data ingestion processes for image processing with
-            \textbf{Dask}. Implemented efficient data structures with \textbf{Parquet} and
-            \textbf{Zarr} reducing the model training time from 22 Hours to 17 Hours (a
-            30\% reduction) as well as enabling random access.
-
-      \item Improved throughput of model predictions per second from 400 predictions per
-            second to 1200 predictions per second (a 3X improvement) by modifying state of
-            the art computer vision models in \textbf{PyTorch}.
-
-      \item Collaborated with stakeholders to address errors in internal assays, conducting
-            detailed error analyses and providing specific recommendations for assay
-            optimization.
-
-      \item Designed reusable abstractions for common ML tasks, streamlining team workflows
-            and fostering collaboration.
-
-    \end{itemize}
-
-  \end{rSubsection}
-  \begin{rSubsection}{Intact Insurance - \textit{Data Scientist Intern} \href{https://intactlab.ca/}{\faExternalLink}}{May 2022 - August 2022}{}{}
-
-    Optimization and evaluation of call center processes across Canada
-
-    \begin{itemize}
-
-      \item Increased yearly call center sales by an estimated 200K\$ by implementing
-            employee management strategies in production. These strategies were designed
-            and reviewed using our custom discrete event simulator implemented with
-            \textbf{Python}, \textbf{SimPy}
-
-      \item Detected production issues by developing dashboards in \textbf{PowerBI} with
-            data ingestion pipelines written in \textbf{SQL} and \textbf{Python}.
-
-    \end{itemize}
-  \end{rSubsection}
-
-  \begin{rSubsection}{Croesus Finansoft - \textit{Research Intern} \href{https://www.croesus.com/about-us/croesus-lab/}{\faExternalLink}}{May 2021 - August 2021}{}{}
-
-    Automatically explain stock price fluctuations from news articles with Natural
-    Language Processing (NLP)
-
-    \begin{itemize}
-
-      \item Identified avenues of research by assessing the state of the art in knowledge
-            injection with knowledge graphs for \textbf{NLP} algorithms and \textbf{Large
-              Language Models}. Established a research agenda with principal researcher.
-
-      \item Increased reproducibility and reduced delays by 15\% by refactoring and
-            re-designing the algorithm evaluation pipeline with \textbf{Argo Workflows} and
-            \textbf{Microservice Design Patterns}
-
-    \end{itemize}
-  \end{rSubsection}
-
-  \begin{rSubsection}{Merck Canada - \textit{Data Engineer Intern }\href{https://jobs.merck.com/us/en/data-advanced-analytics}{\faExternalLink}}{January 2021 - May 2021}{}{}
-
-    Development of Merck Canada's internal ETL (extract, transform, load) processes
-    for Business Intelligence
-
-    \begin{itemize}
-
-      \item Produced first insights on GARDASIL-9 HPV vaccine’s Canadian market by leading a market
-            opportunity analysis. This project was used to power a canada-wide marketing
-            and awareness campaign against HPV.
-
-      \item Automated Merck Canada's manual ETL workloads and reduced delays by two days
-            with \textbf{AWS Cloud} and \textbf{Python}
-
-    \end{itemize}
-  \end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{PROJECTS \& PUBLICATIONS}
-
-  \begin{rSubsection}{\normalfont{\textit{IVADO - Deep Learning Essentials}} \href{https://www.edx.org/course/deep-learning-essentials}{\faExternalLink} \quad \normalfont{Contributed to IVADO/MILA online Deep Learning class covering: CNNs, GANs, RNNs}}{}{}{}
-  \end{rSubsection}
-
-  \begin{rSubsection}{\normalfont{\textit{Polytechnique Montreal - MCIS Lab}} \href{https://mcis.cs.queensu.ca/index.html}{\faExternalLink} \quad \normalfont{Paper accepted at EMSE: \textit{Towards a Change Taxonomy for ML Systems} \href{https://arxiv.org/abs/2203.11365}{\faExternalLink}}}{}{}{}
-  \end{rSubsection}
-
-  \begin{rSubsection}{\normalfont{\textit{Polytechnique AI Student Club - Founder}} \href{https://www.facebook.com/branchPolyAi}{\faExternalLink} \quad \normalfont{Kickstarted the club and handled content for the first cohort of 10}}{}{}{}
-  \end{rSubsection}
-
-  \begin{rSubsection}{\normalfont{\textit{Polytechnique Montreal Admission Scholarship}} \href{https://www.polymtl.ca/aide-financiere/bourses/bourses-dexcellence-ladmission-de-la-fondation-de-polytechnique-et-de-la-directrice-generale}{\faExternalLink} \quad \normalfont{Awarded for outstanding academic performance}}{}{}{}
-  \end{rSubsection}
-
-  %----------------------------------------------------------------------------------------
-  %	LNG SECTION
-  %----------------------------------------------------------------------------------------
-
-  \begin{rSection}{Programming Skills}
-    \begin{multicols}{2}
-      \begin{itemize}[label={}, leftmargin=*, noitemsep]
-
-        \item \textbf{Languages}: Python, Bash, C/C++
-        \item \textbf{Machine Learning}: PyTorch, Scikit-Learn, NumPy
-        \item \textbf{Data Wrangling}: Dask, Pandas, SQL
-        \item \textbf{Others}: Flask, Linux, Docker, GIT, LaTeX
-        \item \textbf{Visualization}: Plotly, MatPlotLib, Seaborne, PowerBI
-        \item \textbf{Books}: Designing ML Systems \textit{(ongoing)}, Clean Code
-      \end{itemize}
-    \end{multicols}
-  \end{rSection}
-
-  %	TECHNICAL STRENGTHS SECTION
-  %----------------------------------------------------------------------------------------
-
-\end{rSection}
 \end{document}
