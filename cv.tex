@@ -56,8 +56,8 @@
 \end{center}
 
 % 1. PROFESSIONAL SUMMARY
-\section*{Applied ML Engineer | Bridging Research \& Product}
-Machine Learning Engineer specializing in building AI products and deploying Foundation Models. I bridge the gap between research and tooling: optimizing large-scale inference, curating post-training datasets, and building decision-support interfaces that enable domain experts to interact with complex models.
+\section*{Applied ML Engineer | Pre-Training Data \& Curation}
+Applied Machine Learning Engineer experienced in \textbf{Data Curation} and \textbf{Semi-Supervised Learning}. I bridged the gap between raw data and model performance: architecting efficient streaming formats for terabyte-scale datasets, designing curriculum learning strategies, and executing data ablations to construct optimal pre-training mixtures.
 
 % 2. CONTACT INFORMATION
 \section{Contact Information}
@@ -78,9 +78,9 @@ Machine Learning Engineer specializing in building AI products and deploying Fou
 \section{Skills}
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
-  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers (Foundation Models) $|$ Fine-tuning $|$ RAG $|$ Human-in-the-loop Workflows}
-  \resumeItem{\textbf{Infrastructure}: Docker $|$ AWS $|$ Modal (Serverless) $|$ Dask $|$ Flask $|$ Distributed Inference}
-  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ NumPy $|$ Data Curation Strategy}
+  \resumeItem{\textbf{Data Engineering}: Dask (Parallel Processing) $|$ Pandas $|$ Parquet/Zarr Optimization $|$ ETL Pipelines $|$ SQL}
+  \resumeItem{\textbf{Data Strategy}: Data Ablation $|$ Curriculum Learning $|$ Active Learning $|$ Semi-Supervised Mixtures}
+  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers $|$ Computer Vision $|$ Sequence Modeling $|$ Signal Analysis}
 \end{itemize}
 
 % 4. EXPERIENCE
@@ -89,12 +89,11 @@ Machine Learning Engineer specializing in building AI products and deploying Fou
   \resumeSubheading
       {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Present}
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Delivered an AI workspace product (Ideation to Production):} Led the full lifecycle of a decision-support tool for scientists. Designed the backend logic and user-facing metrics, enabling non-technical experts to filter high-risk sequences (30\% failure rate) using Transformer likelihoods.}
-          \resumeItem{\textbullet\ \textbf{Engineered high-fidelity post-training datasets:} Curated large-scale proprietary datasets by implementing \textbf{sequence identity clustering} and domain-specific normalization. Enforced strict \textbf{temporal splits} to prevent test-set leakage, ensuring model performance translated to production use.}
-          \resumeItem{\textbullet\ \textbf{Built Human-in-the-Loop (HITL) annotation tools:} Mitigated hallucinations by building a rapid labeling interface for domain experts. Captured expert feedback on the top 20 OOD cases per batch, creating a flywheel to fine-tune the model on hard-negatives (improving precision from 0.4 to 0.8 mAP).}
-          \resumeItem{\textbullet\ \textbf{Consulted on product feasibility:} Partnered with internal customers to validate AI use-cases. Disproved the viability of a proposed Deep Learning solution due to low SNR, redirecting resources to high-impact statistical tooling instead.}
+          \resumeItem{\textbullet\ \textbf{Architected high-throughput data pipelines:} Engineered a sharded data format (separating metadata in \textbf{Parquet} from tensors in \textbf{Zarr}) for 1TB of microscopy data. Leveraged Dask for parallel processing, reducing training data loading time by \textbf{22\% (from 22 hours to 17 hours)}.}
+          \resumeItem{\textbullet\ \textbf{Executed data ablations for Semi-Supervised Learning:} Designed pre-training data mixtures to optimize class balance and assay provenance. The optimized mixture achieved \textbf{0.95 mAP} on held-out test sets, validating the effectiveness of the pseudo-labeling strategy.}
+          \resumeItem{\textbullet\ \textbf{Implemented Active Learning \& Curriculum strategies:} Built an uncertainty-based sampling loop to prioritize "hard" examples. This strategy \textbf{doubled mAP from 40\% to 80\%} on OOD data while significantly reducing annotation costs.}
+          \resumeItem{\textbullet\ \textbf{Consulted on data feasibility:} Conducted signal analysis on proposed datasets, proving statistically that specific modalities lacked sufficient signal. Saved \textbf{3+ months of engineering resources} by redirecting efforts to higher-fidelity data acquisition.}
           \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
-          \resumeItem{\textbullet\ \textbf{Orchestrated cross-functional deployment:} Reduced processing latency by 50\% by deploying a custom MobileNet model across \textbf{Robotics, Backend, and Science} workflows, hitting hardware speed limits to process ~100,000 images/day.}
       \resumeSubHeadingListEnd
 
   \resumeSubheading
@@ -106,7 +105,7 @@ Machine Learning Engineer specializing in building AI products and deploying Fou
   \resumeSubheading
       {Merck}{Montreal}{Data Engineer Intern}{05/2021 - 08/2021}
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Cut reporting latency by 2 days:} Automated manual ETL pipelines using AWS and Python, delivering critical operational data 48 hours faster.}
+          \resumeItem{\textbullet\ \textbf{Automated ETL pipelines:} Built data ingestion workflows using \textbf{AWS} and \textbf{Python} to transform raw operational data into structured formats, reducing reporting latency by \textbf{48 hours}.}
       \resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
 
