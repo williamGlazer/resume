@@ -56,8 +56,9 @@
 \end{center}
 
 % 1. PROFESSIONAL SUMMARY
-\section*{Applied ML Engineer | Bridging Research \& Production}
-Machine Learning Engineer specializing in deploying Transformer-based foundation models into enterprise environments. I focus on the engineering reality of AI: optimizing large-scale inference, validating product viability with internal customers, and building robust human-in-the-loop workflows for high-stakes data.
+\section*{Applied ML Engineer $|$ Bridging Research \& Production}
+Machine Learning Engineer specializing in deploying state of the art transformer-based foundation models. 
+I focus on: optimizing large-scale inference, validating product viability with internal customers and building robust scientific workflows for high-stakes data.
 
 % 2. CONTACT INFORMATION
 \section{Contact Information}
@@ -89,12 +90,14 @@ Machine Learning Engineer specializing in deploying Transformer-based foundation
   \resumeSubheading
       {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Delivered a sequence modeling product (Ideation to Production):} Led the full lifecycle: scoping requirements with internal customers, designing data normalization pipelines, and calibrating Transformer likelihoods. Shipped a tool that enables users to filter high-risk sequences (30\% failure rate).}
-          \resumeItem{\textbullet\ \textbf{Engineered high-fidelity training datasets:} Collaborated with experts to design domain-specific normalization logic. Enforced strict evaluation rigor using \textbf{temporal splits} and \textbf{sequence identity clustering}, ensuring zero test-set leakage and realistic performance estimates.}
-          \resumeItem{\textbullet\ \textbf{Consulted on technical strategy for domain experts:} Validated product feasibility by demonstrating that proposed Deep Learning solutions would fail due to stochastic noise (Low SNR). Saved months of development time by redirecting resources to viable statistical methods.}
-          \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
+          \resumeItem{\textbullet\ \textbf{Delivered a sequence modeling product (Ideation to Production):} Led the full lifecycle: scoping requirements with internal customers, designing data normalization pipelines, calibrating Transformer likelihoods. Shipped a tool that enables users to filter high-risk sequences (30\% failure rate reduction).}
+          \resumeItem{\textbullet\ \textbf{Consulted on technical strategy by domain experts:} Validated product feasibility by demonstrating that proposed Deep Learning solutions would fail due to stochastic noise (Low SNR). Saved weeks of development time by directing resources to viable methods.}
           \resumeItem{\textbullet\ \textbf{Orchestrated cross-functional deployment:} Reduced processing latency by 50\% by deploying a custom MobileNet model across \textbf{Robotics, Backend, and Science} workflows, hitting hardware speed limits to process ~100,000 images/day.}
+          \resumeItem{\textbullet\ \textbf{Architected high-throughput data pipelines:} Engineered a sharded data format (separating metadata in \textbf{Parquet} from tensors in \textbf{Zarr}) for 1TB of microscopy data. Leveraged Dask for parallel processing, \textbf{reducing training data loading time by 22\%}.}
           \resumeItem{\textbullet\ \textbf{Mitigated hallucinations via Fine-tuning:} Doubled precision (0.4 to 0.8 mAP) by fine-tuning a custom model on hard-negative examples. Built a human-in-the-loop labeling interface to capture expert feedback on the top 20 OOD cases per class.}
+          \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
+          \resumeItem{\textbullet\ \textbf{Executed data ablations for Semi-Supervised Learning:} Designed pre-training data mixtures to optimize class balance and assay provenance. The optimized mixture achieved \textbf{0.95 mAP} on held-out test sets, validating the effectiveness of the strategy.}
+          % \resumeItem{\textbullet\ \textbf{Engineered high-fidelity training datasets:} Collaborated with experts to design domain-specific normalization logic. Enforced rigorous evaluation using \textbf{temporal splits} and \textbf{sequence identity clustering}, ensuring zero test-set leakage and realistic performance estimates.}
       \resumeSubHeadingListEnd
 
   \resumeSubheading
