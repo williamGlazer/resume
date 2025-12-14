@@ -57,74 +57,109 @@
 
 % 1. PROFESSIONAL SUMMARY
 \section*{Applied ML Engineer $|$ Bridging Research \& Production}
-Machine Learning Engineer specializing in deploying state of the art transformer-based foundation models. 
-I focus on: optimizing large-scale inference, validating product viability with internal customers and building robust scientific workflows for high-stakes data.
+% value proposition and example, personnal pizzaz
+I'm a Software Engineer / ML Scientist bridging the gap between research and production systems. 
+I can deconstruct State-of-the-Art papers, debug GPU segfaults, iterate on experimental hypotheses, and translate technical complexity into plain English.
 
 % 2. CONTACT INFORMATION
 \section{Contact Information}
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
   \resumeItem{
-    \textbf{Phone}: 438-389-8650 
-    $|$ \textbf{Email}: \href{mailto:willcavanagh@hotmail.com}{willcavanagh@hotmail.com} 
+    \textbf{Phone}: 438-389-8650
+    $|$ \textbf{Email}: \href{mailto:willcavanagh@hotmail.com}{willcavanagh@hotmail.com}
     $|$ \textbf{Location}: Montreal, QC / Vancouver, BC
     \\
     \textbf{LinkedIn}: \href{https://www.linkedin.com/in/williamglazercavanagh/}{linkedin.com/in/williamglazercavanagh}
-    $|$ \textbf{GitHub}: \href{https://github.com/williamGlazer}{github.com/williamGlazer} 
+    $|$ \textbf{GitHub}: \href{https://github.com/williamGlazer}{github.com/williamGlazer}
     $|$ \textbf{Website}: \href{https://williamglazer.github.io}{williamglazer.github.io}
   }
+  \vspace{-12pt}
 \end{itemize}
+
 
 % 3. SKILLS
 \section{Skills}
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
-  \resumeItem{\textbf{Modeling}: PyTorch $|$ Transformers (BERT/ESM Foundation Models) $|$ Fine-tuning $|$ NLP $|$ Computer Vision}
-  \resumeItem{\textbf{Infrastructure}: Docker $|$ AWS $|$ Modal (Serverless) $|$ Dask $|$ Flask $|$ Distributed Systems}
-  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ NumPy $|$ ML System Design $|$ Retrieval-Augmented Architectures}
+  \resumeItem{\textbf{Modeling}: PyTorch $|$ JAX $|$ Transformers (BERT/ESM) $|$ Object Detection $|$ RAG $|$ Fine-tuning}
+  \resumeItem{\textbf{Infrastructure}: Docker $|$ Modal (Serverless) $|$ Dask $|$ Parquet/Zarr $|$ Distributed Systems}
+  \resumeItem{\textbf{Core Stack}: Python $|$ SQL $|$ Bash $|$ ML System Design $|$ A/B Testing $|$ GPU Profiling}
 \end{itemize}
 
+\vspace{-12pt}
+
 % 4. EXPERIENCE
+% split by projects - brief description + role
+% should I mention hired intern => I => II
+% Problem => Accomplished X, as measured by Y, by doing Z
 \section{Work Experience}
 \resumeSubHeadingList
-  \resumeSubheading
-      {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
-      \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Delivered a sequence modeling product (Ideation to Production):} Led the full lifecycle: scoping requirements with internal customers, designing data normalization pipelines, calibrating Transformer likelihoods. Shipped a tool that enables users to filter high-risk sequences (30\% failure rate reduction).}
-          \resumeItem{\textbullet\ \textbf{Consulted on technical strategy by domain experts:} Validated product feasibility by demonstrating that proposed Deep Learning solutions would fail due to stochastic noise (Low SNR). Saved weeks of development time by directing resources to viable methods.}
-          \resumeItem{\textbullet\ \textbf{Orchestrated cross-functional deployment:} Reduced processing latency by 50\% by deploying a custom MobileNet model across \textbf{Robotics, Backend, and Science} workflows, hitting hardware speed limits to process ~100,000 images/day.}
-          \resumeItem{\textbullet\ \textbf{Architected high-throughput data pipelines:} Engineered a sharded data format (separating metadata in \textbf{Parquet} from tensors in \textbf{Zarr}) for 1TB of microscopy data. Leveraged Dask for parallel processing, \textbf{reducing training data loading time by 22\%}.}
-          \resumeItem{\textbullet\ \textbf{Mitigated hallucinations via Fine-tuning:} Doubled precision (0.4 to 0.8 mAP) by fine-tuning a custom model on hard-negative examples. Built a human-in-the-loop labeling interface to capture expert feedback on the top 20 OOD cases per class.}
-          \resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines for BERT-style Foundation Models (ESM) to remove serial bottlenecks, leveraging \textbf{serverless fan-out (Modal)} and distributed volume caching to minimize cold starts.}
-          \resumeItem{\textbullet\ \textbf{Executed data ablations for Semi-Supervised Learning:} Designed pre-training data mixtures to optimize class balance and assay provenance. The optimized mixture achieved \textbf{0.95 mAP} on held-out test sets, validating the effectiveness of the strategy.}
-          % \resumeItem{\textbullet\ \textbf{Engineered high-fidelity training datasets:} Collaborated with experts to design domain-specific normalization logic. Enforced rigorous evaluation using \textbf{temporal splits} and \textbf{sequence identity clustering}, ensuring zero test-set leakage and realistic performance estimates.}
-      \resumeSubHeadingListEnd
+\resumeSubheading
+{AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
 
-  \resumeSubheading
-      {Croesus}{Montreal}{Research Intern}{05/2021 - 08/2021}
-      \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Evaluated Retrieval-Augmented Generation (RAG) feasibility:} Assessed early methods for injecting Knowledge Graphs into BERT-based architectures to define the company's roadmap for grounding NLP models in factual data.}
-      \resumeSubHeadingListEnd
-
-  \resumeSubheading
-      {Merck}{Montreal}{Data Engineer Intern}{05/2021 - 08/2021}
-      \resumeSubHeadingList
-          \resumeItem{\textbullet\ \textbf{Cut reporting latency by 2 days:} Automated manual ETL pipelines using AWS and Python, delivering critical operational data 48 hours faster.}
-      \resumeSubHeadingListEnd
+% description: protein engineering
+\resumeItem{\textbf{Project: ML for Protein Engineering} (Risk Assessment \& Inference)}
+\resumeSubHeadingList
+% intent: fast learner 
+\resumeItem{\textbullet\ \textbf{Translated complex science into working software:} Learned the biology domain to bridge Machine Learning, engineering, and research. Converted open-ended goals from Principal Scientists into clear engineering plans.}
+% intent: ownership 
+\resumeItem{\textbullet\ \textbf{Shipped risk assessment product:} Led the full product lifecycle from prototype to production. Enabled users to filter high-risk sequences, reducing downstream failure rates by 30\%.}
+% intent: ML Systems 
+\resumeItem{\textbullet\ \textbf{Engineered risk calibration system:} Validated custom data normalization strategies on noisy biological data with ablation studies. Applied this pipeline to calibrate Foundation Model probabilities, ensuring confidence scores aligned with empirical failure rates.}
+% intent: performance engineering
+\resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Re-engineered pipelines to remove serial bottlenecks. Vectorized pre-processing for multiple Foundation Models, ensuring CPU data loading did not starve GPUs.}
+% intent: distributed systems
+\resumeItem{\textbullet\ \textbf{Optimized distributed infrastructure:} Combined serverless fan-out with volume caching to slash cold starts by 90\%. Eliminated I/O bottlenecks to achieve linear speedups, meaning processing time decreased proportionally to horizontal scaling.}
 \resumeSubHeadingListEnd
+
+% computer vision
+\textbf{Project: High-Throughput Computer Vision} (100k+ images/day)
+\resumeSubHeadingList
+% Efficient ML architecture design
+\resumeItem{\textbullet\ \textbf{Engineered efficient deep learning architecture:} Designed a custom architecture (MobileNet backbone + detection head) to replace a heavy legacy model. Increased speed from 400 to 1200 images/s, hitting the hardware's physical limits.}
+% ML Systems
+\resumeItem{\textbullet\ \textbf{Doubled performance on edge cases (0.4 to 0.8 mAP):} Built a tool for experts to flag model failures. Used this feedback to fine-tune the model on hard examples, fixing errors on unseen data.}
+% Focus on the ML
+\resumeItem{\textbullet\ \textbf{Automated data labeling:} Built a semi-supervised pipeline to label complex multi-class assays. Validated quality with blind A/B tests, achieving an 80\% preference rate from human experts over the previous baseline.}
+% performance engineering
+\resumeItem{\textbullet\ \textbf{Eliminated Training Bottlenecks:} Engineered a sharded data format (separating metadata in Parquet from tensors in Zarr) for 1TB-scale microscopy data. Leveraged Dask for parallel processing to fully saturate GPU utilization during training..}
+% thinking strategically TODO: poor lead in
+\resumeItem{\textbullet\ \textbf{Saved weeks of engineering time:} Assessed the feasability of Deep Learning on noisy data. Redirected stakeholders toward simpler, viable methods, preventing weeks of wasted engineering.}
+\resumeSubHeadingListEnd
+
+\resumeSubheading
+{Croesus}{Montreal}{Research Intern}{05/2021 - 08/2021}
+\resumeSubHeadingList
+% RAG
+\resumeItem{\textbullet\ \textbf{Evaluated Retrieval-Augmented Generation (RAG) feasibility:} Assessed early methods for injecting Knowledge Graphs into BERT-based architectures to define the research group's roadmap for grounding NLP models in factual data.}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
 
 % 5. EDUCATION
 \section{Education}
 \resumeSubHeadingList
-  \resumeSubheading
-  {MSc. Machine Learning}{Professional Masters}{Graduation Year 2023}{University of Montreal (MILA)}{}
-    \resumeSubheading
-    {BEng. Software Engineering}{Artificial Intelligence Profile}{Graduation Year 2022}{Polytechnique Montreal}{}
-    \resumeSubHeadingList
-        \resumeItem{\textbullet\ \textbf{Co-authored ML systems research:} Published analysis on \textit{Change Taxonomy for ML Systems} (accepted at EMSE).}
-        \resumeItem{\textbullet\ \textbf{Benchmarked RL frameworks:} Conducted comparative performance analysis of \textbf{JAX} vs. PyTorch for Deep Reinforcement Learning. [\href{https://github.com/williamGlazer/jax-4-deeprl/blob/main/report.pdf}{GitHub/jax-4-deeprl}]}
-        \resumeItem{\textbullet\ \textbf{Scientific Contributor (IVADO/MILA):} Served as technical reference and annotator for the \textit{Deep Learning Essentials} course, validating scientific accuracy of CNN, GAN, and RNN content for content teams.}
-    \resumeSubHeadingListEnd
+
+\resumeSubheading
+{MSc. Machine Learning}{Professional Masters}{Graduation Year 2023}{University of Montreal (MILA)}
+\resumeSubHeadingList
+% RL JAX
+\vspace{-4pt}
+\resumeItem{\textbullet\ \textbf{Benchmarked RL frameworks:} Conducted comparative performance analysis of \textbf{JAX} vs. PyTorch for Deep Reinforcement Learning. [\href{https://github.com/williamGlazer/jax-4-deeprl/blob/main/report.pdf}{GitHub/jax-4-deeprl}]}
+\resumeSubHeadingListEnd
+
+\resumeSubheading
+{BEng. Software Engineering}{Artificial Intelligence Profile}{Graduation Year 2022}{Polytechnique Montreal}
+\resumeSubHeadingList
+\vspace{-4pt}
+% research publication
+\resumeItem{\textbullet\ \textbf{Published Research:} Co-authored \textit{Change Taxonomy for ML Pipelines} (Empirical Software Engineering, 2023).}
+\resumeItem{\textbullet\ \textbf{Community Leadership:} Co-founded PolyAI, a student initiative for Applied AI.}
+\resumeSubHeadingListEnd
+
 \resumeSubHeadingListEnd
 
 \end{document}
