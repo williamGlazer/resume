@@ -57,9 +57,8 @@
 
 % 1. PROFESSIONAL SUMMARY
 \section*{Applied ML Engineer $|$ Bridging Research \& Production}
-% value proposition and example, personnal pizzaz
 I'm a Software Engineer / ML Scientist bridging the gap between research and production systems.
-I can deconstruct State-of-the-Art papers, profile GPU bottlenecks, iterate on experimental hypotheses, and translate technical complexity into plain English.
+I can deconstruct state-of-the-art papers, profile GPU bottlenecks, iterate on experimental hypotheses, and translate technical complexity into plain English.
 
 % 2. CONTACT INFORMATION
 \section{Contact Information}
@@ -90,52 +89,39 @@ I can deconstruct State-of-the-Art papers, profile GPU bottlenecks, iterate on e
 \vspace{-12pt}
 
 % 4. EXPERIENCE
-% split by projects - brief description + role
-% should I mention hired intern => I => II
-% Problem => Accomplished X, as measured by Y, by doing Z
 \section{Work Experience}
+
 \resumeSubHeadingList
+
 \resumeSubheading
 {AbCellera}{Montreal/Vancouver}{Machine Learning Scientist II}{05/2023 - Current}
 
-% description: protein engineering
-\resumeItem{\textbf{Project: ML for Protein Engineering} (Risk Assessment \& Inference)}
 \resumeSubHeadingList
-% intent: performance engineering
-\resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Removed serial bottlenecks and vectorized pre-processing to saturate GPUs for multiple Foundation Models.}
-% intent: distributed systems
-\resumeItem{\textbullet\ \textbf{Optimized distributed systems:} Reduced container startup latency by 90\% by using volume caching to enable linear scaling during serverless fan-out.}
-% intent: fast learner 
+\resumeItem{\hspace{-12pt} \textbf{Project: ML for Protein Engineering} (Risk Assessment \& Inference)}
 \resumeItem{\textbullet\ \textbf{Translated complex science into working software:} Learned the biology domain to bridge Machine Learning, engineering, and research. Converted open-ended goals from Principal Scientists into clear engineering plans.}
-% intent: ownership 
 \resumeItem{\textbullet\ \textbf{Shipped risk assessment product:} Led the full product lifecycle from prototype to production. Enabled users to filter high-risk sequences, reducing downstream failure rates by 30\%.}
-% intent: ML Systems 
 \resumeItem{\textbullet\ \textbf{Engineered risk calibration system:} Validated custom data normalization strategies on noisy biological data with ablation studies. Applied this pipeline to calibrate Foundation Model probabilities, ensuring confidence scores aligned with empirical failure rates.}
+\resumeItem{\textbullet\ \textbf{Accelerated Transformer inference by 30x:} Removed serial bottlenecks and vectorized pre-processing to saturate GPUs for multiple Foundation Models.}
+\resumeItem{\textbullet\ \textbf{Optimized distributed systems:} Reduced container startup latency by 90\% by using volume caching to enable linear scaling during serverless fan-out.}
 \resumeSubHeadingListEnd
 
-% computer vision
-\textbf{Project: High-Throughput Computer Vision} (100k+ images/day)
 \resumeSubHeadingList
-% Efficient ML architecture design
-\resumeItem{\textbullet\ \textbf{Maximized imaging throughput (400 to 1200 images/s):} Designed a lightweight architecture (MobileNet backbone + detection head) to replace heavy legacy models, hitting the imaging hardware's physical limits.}
-% ML Systems
+\resumeItem{\hspace{-12pt} \textbf{Project: High-Throughput Computer Vision} (100k+ images/day)}
+\resumeItem{\textbullet\ \textbf{Maximized imaging throughput (400 to 1200 images/s):} Designed a lightweight deep learning architecture (MobileNet backbone + detection head) to replace heavy legacy models, hitting the imaging hardware's physical limits.}
 \resumeItem{\textbullet\ \textbf{Doubled performance on edge cases (0.4 to 0.8 mAP):} Built a tool for experts to flag model failures. Used this feedback to fine-tune the model on hard examples, fixing errors on unseen data.}
-% Focus on the ML
 \resumeItem{\textbullet\ \textbf{Automated data labeling:} Built a semi-supervised pipeline to label complex multi-class assays. Validated quality with blind A/B tests, achieving an 80\% preference rate from human experts over the previous baseline.}
-% performance engineering
-\resumeItem{\textbullet\ \textbf{Eliminated Training Bottlenecks:} Engineered a sharded data format (separating metadata in Parquet from tensors in Zarr) for 1TB-scale microscopy data. Leveraged Dask for parallel processing to fully saturate GPU utilization during training..}
-% thinking strategically TODO: poor lead in
-\resumeItem{\textbullet\ \textbf{Saved weeks of engineering time:} Ran ablation studies on noisy data to demonstrate that simpler clustering architectures macthed Deep Learning performance, saving engineering time and reducing inference costs.}
+\resumeItem{\textbullet\ \textbf{Eliminated Training Bottlenecks:} Engineered a sharded data format (separating metadata in Parquet from tensors in Zarr) for 1TB-scale microscopy data. Leveraged Dask for parallel processing to fully saturate GPU utilization during training.}
+\resumeItem{\textbullet\ \textbf{Saved weeks of engineering time:} Ran ablation studies on noisy imaging data to demonstrate that simpler clustering architectures matched Deep Learning performance, saving engineering time and reducing inference costs.}
 \resumeSubHeadingListEnd
 
 \resumeSubheading
 {Croesus}{Montreal}{Research Intern}{05/2021 - 08/2021}
 \resumeSubHeadingList
-% RAG
 \resumeItem{\textbullet\ \textbf{Evaluated Retrieval-Augmented Generation (RAG) feasibility:} Assessed early methods for injecting Knowledge Graphs into BERT-based architectures to define the research group's roadmap for grounding NLP models in factual data.}
 \resumeSubHeadingListEnd
 
 \resumeSubHeadingListEnd
+
 
 \vspace{-12pt}
 
@@ -146,16 +132,14 @@ I can deconstruct State-of-the-Art papers, profile GPU bottlenecks, iterate on e
 \resumeSubheading
 {MSc. Machine Learning}{Professional Masters}{Graduation Year 2023}{University of Montreal (MILA)}
 \resumeSubHeadingList
-% RL JAX
 \vspace{-4pt}
-\resumeItem{\textbullet\ \textbf{Benchmarked JAX vs. PyTorch:} Re-implemented reinforcement leaning algorithms (TD3/VPG) using JAX (Haiku/Optax) to evaluate JIT compilation benefits. Accelerated training by 5x using XLA compilation compared to standard PyTorch (JIT Vs. Eager).}
+\resumeItem{\textbullet\ \textbf{Benchmarked JAX vs. PyTorch:} Re-implemented reinforcement learning algorithms (TD3/VPG) using JAX (Haiku/Optax) to evaluate JIT compilation benefits. Accelerated training by 5x using XLA compilation compared to standard PyTorch (JIT Vs. Eager).}
 \resumeSubHeadingListEnd
 
 \resumeSubheading
 {BEng. Software Engineering}{Artificial Intelligence Profile}{Graduation Year 2022}{Polytechnique Montreal}
 \resumeSubHeadingList
 \vspace{-4pt}
-% research publication
 \resumeItem{\textbullet\ \textbf{Published Research:} Co-authored \textit{Change Taxonomy for ML Pipelines} (Empirical Software Engineering, 2023).}
 \resumeItem{\textbullet\ \textbf{Community Leadership:} Co-founded PolyAI, a student initiative for Applied AI.}
 \resumeSubHeadingListEnd
